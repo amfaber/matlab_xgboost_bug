@@ -7,4 +7,5 @@ end
 pyenv("Version", python_path, "ExecutionMode", "OutOfProcess");
 
 py.importlib.import_module("call_xgboost");
+disp(pyenv())
 py.call_xgboost.kaboom();
