@@ -4,7 +4,7 @@ if ispc()
 else
   python_path = ".venv/bin/python";
 end
-pyenv("Version", python_path, "ExecutionMode", "OutOfProcess");
+pyenv("Version", python_path, "ExecutionMode", "InProcess");
 
 py.importlib.import_module("call_xgboost");
 disp(pyenv())
